@@ -20,8 +20,9 @@ const config = {
   // Change this to change the ca of the projects
   ca: "45C1NSdYrbkT1etufJGLB7rEYsj2JbfFTswreDRNbjxx",
   // Change this for changing the roadmap
-  roadmap: `Donate to charity
-  Donate to charity`,
+  roadmap: 
+`Donate to charity
+Donate to charity`,
 };
 
 export { config };
