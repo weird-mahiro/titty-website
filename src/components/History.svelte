@@ -2,6 +2,18 @@
   import { history } from "../stores/history";
   import { theme } from "../stores/theme";
   import Ps1 from "./Ps1.svelte";
+  import { config } from "../../config";
+  const banner = `
+████████╗██╗████████╗████████╗██╗   ██╗
+╚══██╔══╝██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+   ██║   ██║   ██║      ██║    ╚████╔╝ 
+   ██║   ██║   ██║      ██║     ╚██╔╝  
+   ██║   ██║   ██║      ██║      ██║   
+   ╚═╝   ╚═╝   ╚═╝      ╚═╝      ╚═╝   
+
+ca: ${config.ca}
+Type 'help' to see list of available commands.
+${config.bannerRoadmap}`;
 </script>
 
 {#each $history as { command, outputs }}
@@ -17,7 +29,7 @@
     </div>
 
     {#each outputs as output}
-      <p class="whitespace-pre">
+      <p class="whitespace-pre text-wrap">
         {output}
       </p>
     {/each}

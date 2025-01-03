@@ -3,6 +3,18 @@ import { history } from "../stores/history";
 import { theme } from "../stores/theme";
 import { config } from "../../config";
 
+const banner = `
+████████╗██╗████████╗████████╗██╗   ██╗
+╚══██╔══╝██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+   ██║   ██║   ██║      ██║    ╚████╔╝ 
+   ██║   ██║   ██║      ██║     ╚██╔╝  
+   ██║   ██║   ██║      ██║      ██║   
+   ╚═╝   ╚═╝   ╚═╝      ╚═╝      ╚═╝   
+
+ca: ${config.ca}
+Type 'help' to see list of available commands.
+${config.bannerRoadmap}`;
+
 export const commands: Record<
   string,
   (args: string[]) => Promise<string> | string
@@ -63,19 +75,25 @@ export const commands: Record<
       }
     }
   },
-  banner: () => `
-████████╗██╗████████╗████████╗██╗   ██╗
-╚══██╔══╝██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
-   ██║   ██║   ██║      ██║    ╚████╔╝ 
-   ██║   ██║   ██║      ██║     ╚██╔╝  
-   ██║   ██║   ██║      ██║      ██║   
-   ╚═╝   ╚═╝   ╚═╝      ╚═╝      ╚═╝   
-
-ca: ${config.ca}
-Type 'help' to see list of available commands.
-`,
+  banner: () => {
+    return banner;
+  },
+  education: () => {
+    return config.education;
+  },
+  prevention: () => {
+    return config.prevention;
+  },
+  screening: () => {
+    return config.screening;
+  },
   clear: () => {
-    history.set([]);
+    history.set([
+      {
+        command: "banner",
+        outputs: [banner],
+      },
+    ]);
 
     return "";
   },
