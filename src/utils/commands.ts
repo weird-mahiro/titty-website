@@ -20,11 +20,6 @@ export const commands: Record<
   (args: string[]) => Promise<string> | string
 > = {
   help: () => "Available commands: " + Object.keys(commands).join(", "),
-  titty: () => {
-    let rand_pics = Math.floor(Math.random() * config.totalPictureNumber);
-    window.open(`/photos/pics-${rand_pics}.jpg`, "_blank")?.focus();
-    return "Showing some titties pics";
-  },
   socials: () => {
     let result: string = "";
     for (let i = 0; i < config.socials.length; i++) {

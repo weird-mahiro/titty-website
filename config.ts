@@ -1,7 +1,4 @@
 const config = {
-  // Change this when changing number of pictures
-  // Picutre having format as pics-0, pics-1, etc
-  totalPictureNumber: 15,
   // Change this for all the socials. Just add fix with the format below
   socials: [
     {
