@@ -20,7 +20,8 @@ const config = {
   // Change this to change the ca of the projects
   ca: "45C1NSdYrbkT1etufJGLB7rEYsj2JbfFTswreDRNbjxx",
   // Change this for changing the roadmap
-  roadmap: `If this shit hits 5 million market cap, we have plans to donate to breast cancer or some charity involving $TITTY so lets pump this motherfucker.`,
+  roadmap: `Donate to charity
+  Donate to charity`,
 };
 
 export { config };
