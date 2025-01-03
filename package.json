@@ -3,21 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "socials": [
-    {
-      "type": "twitter",
-      "url": "https://x.com/tittyonsolcto"
-    },
-    {
-      "type": "telegram",
-      "url": "https://t.me/tittyctosol"
-    },
-    {
-      "type": "dexscreener",
-      "url": "https://dexscreener.com/solana/9xzeWnrFyYhuK6tW5zBGh3jUqiDgHFuPezQYzkpyMgYh"
-    }
-  ],
-  "ca": "45C1NSdYrbkT1etufJGLB7rEYsj2JbfFTswreDRNbjxx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

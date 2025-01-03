@@ -1,11 +1,7 @@
 import themes from "../../themes.json";
 import { history } from "../stores/history";
 import { theme } from "../stores/theme";
-import packageJson from "../../package.json";
-
-const hostname = window.location.hostname;
-
-const PICS_LEN = 15;
+import { config } from "../../config";
 
 export const commands: Record<
   string,
@@ -13,19 +9,18 @@ export const commands: Record<
 > = {
   help: () => "Available commands: " + Object.keys(commands).join(", "),
   titty: () => {
-    let rand_pics = Math.floor(Math.random() * PICS_LEN);
+    let rand_pics = Math.floor(Math.random() * config.totalPictureNumber);
     window.open(`/photos/pics-${rand_pics}.jpg`, "_blank")?.focus();
-    return "Some titties pics";
+    return "Showing some titties pics";
   },
   socials: () => {
     let result: string = "";
-    for (let i = 0; i < packageJson.socials.length; i++) {
-      result += `${packageJson.socials[i].type}: ${packageJson.socials[i].url} \n`;
+    for (let i = 0; i < config.socials.length; i++) {
+      result += `${config.socials[i].type}: ${config.socials[i].url} \n`;
     }
     return result;
   },
-  roadmap: () =>
-    "If this shit hits 5 million market cap, we have plans to donate to breast cancer or some charity involving $TITTY so lets pump this motherfucker.",
+  roadmap: () => config.roadmap,
   theme: (args: string[]) => {
     const usage = `Usage: theme [args].
     [args]:
@@ -76,7 +71,7 @@ export const commands: Record<
    ██║   ██║   ██║      ██║      ██║   
    ╚═╝   ╚═╝   ╚═╝      ╚═╝      ╚═╝   
 
-ca: ${packageJson.ca}
+ca: ${config.ca}
 Type 'help' to see list of available commands.
 `,
   clear: () => {
