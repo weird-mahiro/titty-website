@@ -30,7 +30,9 @@
 
   const handleKeyDown = async (event: KeyboardEvent) => {
     if (event.key === "Enter") {
-      const [commandName, ...args] = command.split(" ");
+      // Lowercase for mobile user
+      const lowerCaseCommand = command.toLowerCase();
+      const [commandName, ...args] = lowerCaseCommand.split(" ");
 
       if (import.meta.env.VITE_TRACKING_ENABLED === "true") {
         track(commandName, ...args);
