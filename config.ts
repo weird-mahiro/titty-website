@@ -17,13 +17,7 @@ const config = {
   // Change this to change the ca of the projects
   ca: "45C1NSdYrbkT1etufJGLB7rEYsj2JbfFTswreDRNbjxx",
   // Change this for changing the roadmap
-  roadmap: `$TITTY is a coin on the Solana blockchain which aims to raise awareness for breast-cancer. The primary goal is to spread education and awareness about breast cancer prevention and early detection. 
-
-To support this mission, a portion of funds raised through $TITTY transactions will be donated to reputable breast cancer charities and campaigns.
-
-Additionally, the project seeks to partner with evidence-based health organizations to promote ongoing research and support for those affected by the disease. The tokenomics system will ensure transparency and continuous contributions to this crucial cause.`,
-  bannerRoadmap:
-    "$TITTY is a coin on the Solana blockchain which aims to raise awareness for breast-cancer. The primary goal is to spread education and awareness about breast cancer prevention and early detection.",
+  roadmap: `$TITTY is a coin on the Solana blockchain which aims to raise awareness for breast-cancer.`,
 
   education: `Breast cancer is one of the most common types of cancer worldwide, affecting millions of women each year. It occurs when cells in the breast grow uncontrollably, often forming a tumor that can be felt as a lump. While breast cancer can also occur in men, it is significantly more common in women. Early detection through regular screening and awareness of risk factors are key in improving survival rates and treatment outcomes.
 
