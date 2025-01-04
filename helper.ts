@@ -36,6 +36,7 @@ Phase 3: Hodl that $TITTY
 Phase 4: Appreciate the $TITTY, save the titty
 Phase 5: To be continued!
 
+Type 'help' to see list of available commands.
+
 ca: ${config.ca}
-${getSocials()}
-Type 'help' to see list of available commands.`;
+`;

@@ -8,12 +8,7 @@
 
   // reset history
   window.onbeforeunload = function (e) {
-    history.set([
-      {
-        command: "banner",
-        outputs: [banner],
-      },
-    ]);
+    history.set([]);
   };
 </script>
 

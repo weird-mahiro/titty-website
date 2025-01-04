@@ -1,6 +1,5 @@
 <script>
   import { theme } from "../stores/theme";
-  let hostname = window.location.hostname;
 </script>
 
 <h1 class="font-bold flex">

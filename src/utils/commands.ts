@@ -53,9 +53,6 @@ export const commands: Record<
       }
     }
   },
-  banner: () => {
-    return banner;
-  },
   education: () => {
     return config.education;
   },
@@ -66,12 +63,7 @@ export const commands: Record<
     return config.screening;
   },
   clear: () => {
-    history.set([
-      {
-        command: "banner",
-        outputs: [banner],
-      },
-    ]);
+    history.set([]);
 
     return "";
   },
