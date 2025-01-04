@@ -21,15 +21,7 @@
       {#each outputs as output}
         <TypeWriter mode="cascade" interval={1}>
           <p class="whitespace-pre text-wrap">
-            {@html output.replace(
-              /(twitter|telegram|dexscreener): (https?:\/\/[^\s]+)/g,
-              (_, type, url) => {
-                const capitalizedType = type === 'twitter' ? 'Twitter' : 
-                                      type === 'telegram' ? 'Telegram' : 
-                                      'Dexscreener';
-                return `<a href="${url}" target="_blank" class="text-blue-400 hover:underline">${capitalizedType}</a>`;
-              }
-            )}
+            {output}
           </p>
         </TypeWriter>
       {/each}
@@ -47,15 +39,7 @@
       </div>
       {#each outputs as output}
         <p class="whitespace-pre text-wrap">
-          {@html output.replace(
-            /(twitter|telegram|dexscreener): (https?:\/\/[^\s]+)/g,
-            (_, type, url) => {
-              const capitalizedType = type === 'twitter' ? 'Twitter' : 
-                                    type === 'telegram' ? 'Telegram' : 
-                                    'Dexscreener';
-              return `<a href="${url}" target="_blank" class="text-blue-400 hover:underline">${capitalizedType}</a>`;
-            }
-          )}
+          {output}
         </p>
       {/each}
     </div>
