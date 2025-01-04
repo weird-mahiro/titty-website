@@ -3,30 +3,13 @@ import { history } from "../stores/history";
 import { theme } from "../stores/theme";
 import { config } from "../../config";
 
-const banner = `
-████████╗██╗████████╗████████╗██╗   ██╗
-╚══██╔══╝██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
-   ██║   ██║   ██║      ██║    ╚████╔╝ 
-   ██║   ██║   ██║      ██║     ╚██╔╝  
-   ██║   ██║   ██║      ██║      ██║   
-   ╚═╝   ╚═╝   ╚═╝      ╚═╝      ╚═╝   
-
-ca: ${config.ca}
-Type 'help' to see list of available commands.
-${config.bannerRoadmap}`;
+import { banner } from "../../helper";
 
 export const commands: Record<
   string,
   (args: string[]) => Promise<string> | string
 > = {
   help: () => "Available commands: " + Object.keys(commands).join(", "),
-  socials: () => {
-    let result: string = "";
-    for (let i = 0; i < config.socials.length; i++) {
-      result += `${config.socials[i].type}: ${config.socials[i].url} \n`;
-    }
-    return result;
-  },
   roadmap: () => config.roadmap,
   theme: (args: string[]) => {
     const usage = `Usage: theme [args].

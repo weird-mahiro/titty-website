@@ -4,19 +4,7 @@
   import History from "./components/History.svelte";
   import { theme } from "./stores/theme";
   import { history } from "./stores/history";
-  import { config } from "../config";
-
-  const banner = `
-████████╗██╗████████╗████████╗██╗   ██╗
-╚══██╔══╝██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
-   ██║   ██║   ██║      ██║    ╚████╔╝ 
-   ██║   ██║   ██║      ██║     ╚██╔╝  
-   ██║   ██║   ██║      ██║      ██║   
-   ╚═╝   ╚═╝   ╚═╝      ╚═╝      ╚═╝   
-
-ca: ${config.ca}
-Type 'help' to see list of available commands.
-${config.bannerRoadmap}`;
+  import { banner } from "../helper";
 
   // reset history
   window.onbeforeunload = function (e) {
