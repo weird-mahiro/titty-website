@@ -21,7 +21,10 @@
       {#each outputs as output}
         <TypeWriter mode="cascade" interval={1}>
           <p class="whitespace-pre text-wrap">
-            {output}
+            {@html output.replace(
+              /(twitter|telegram|dexscreener): (https?:\/\/[^\s]+)/g,
+              (_, type, url) => `<a href="${url}" target="_blank" class="text-blue-400 hover:underline capitalize">${type}</a>`
+            )}
           </p>
         </TypeWriter>
       {/each}
@@ -39,7 +42,10 @@
       </div>
       {#each outputs as output}
         <p class="whitespace-pre text-wrap">
-          {output}
+          {@html output.replace(
+            /(twitter|telegram|dexscreener): (https?:\/\/[^\s]+)/g,
+            (_, type, url) => `<a href="${url}" target="_blank" class="text-blue-400 hover:underline capitalize">${type}</a>`
+          )}
         </p>
       {/each}
     </div>
