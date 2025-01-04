@@ -11,9 +11,10 @@
 
   function createLinks(output: string) {
     let result = output;
-    config.socials.forEach(social => {
-      const pattern = new RegExp(`${social.type}:.*?(?=\\n|$)`, 'g');
-      const capitalizedType = social.type.charAt(0).toUpperCase() + social.type.slice(1);
+    config.socials.forEach((social) => {
+      const pattern = new RegExp(`${social.type}:.*?(?=\\n|$)`, "g");
+      const capitalizedType =
+        social.type.charAt(0).toUpperCase() + social.type.slice(1);
       result = result.replace(pattern, capitalizedType);
     });
     return result;
@@ -21,8 +22,9 @@
 
   function addHyperlinks(output: string) {
     let result = output;
-    config.socials.forEach(social => {
-      const capitalizedType = social.type.charAt(0).toUpperCase() + social.type.slice(1);
+    config.socials.forEach((social) => {
+      const capitalizedType =
+        social.type.charAt(0).toUpperCase() + social.type.slice(1);
       result = result.replace(
         capitalizedType,
         `<a href="${social.url}" target="_blank" class="text-blue-400 hover:underline">${capitalizedType}</a>`
@@ -48,7 +50,11 @@
         {#if historyIndex === 0}
           <!-- Initial banner - with animation -->
           {#if !isInitialTypingDone}
-            <TypeWriter mode="cascade" interval={1} on:done={() => isInitialTypingDone = true}>
+            <TypeWriter
+              mode="cascade"
+              interval={1}
+              on:done={() => (isInitialTypingDone = true)}
+            >
               <div class="whitespace-pre text-wrap">
                 {createLinks(output)}
               </div>
@@ -61,7 +67,11 @@
         {:else if historyIndex === $history.length - 1 && command === "banner"}
           <!-- Command banner - with animation -->
           {#if !isCommandTypingDone}
-            <TypeWriter mode="cascade" interval={1} on:done={() => isCommandTypingDone = true}>
+            <TypeWriter
+              mode="cascade"
+              interval={1}
+              on:done={() => (isCommandTypingDone = true)}
+            >
               <div class="whitespace-pre text-wrap">
                 {createLinks(output)}
               </div>
