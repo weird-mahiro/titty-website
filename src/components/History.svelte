@@ -23,7 +23,12 @@
           <p class="whitespace-pre text-wrap">
             {@html output.replace(
               /(twitter|telegram|dexscreener): (https?:\/\/[^\s]+)/g,
-              (_, type, url) => `<a href="${url}" target="_blank" class="text-blue-400 hover:underline capitalize">${type}</a>`
+              (_, type, url) => {
+                const capitalizedType = type === 'twitter' ? 'Twitter' : 
+                                      type === 'telegram' ? 'Telegram' : 
+                                      'Dexscreener';
+                return `<a href="${url}" target="_blank" class="text-blue-400 hover:underline">${capitalizedType}</a>`;
+              }
             )}
           </p>
         </TypeWriter>
@@ -44,7 +49,12 @@
         <p class="whitespace-pre text-wrap">
           {@html output.replace(
             /(twitter|telegram|dexscreener): (https?:\/\/[^\s]+)/g,
-            (_, type, url) => `<a href="${url}" target="_blank" class="text-blue-400 hover:underline capitalize">${type}</a>`
+            (_, type, url) => {
+              const capitalizedType = type === 'twitter' ? 'Twitter' : 
+                                    type === 'telegram' ? 'Telegram' : 
+                                    'Dexscreener';
+              return `<a href="${url}" target="_blank" class="text-blue-400 hover:underline">${capitalizedType}</a>`;
+            }
           )}
         </p>
       {/each}
