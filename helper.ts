@@ -1,13 +1,5 @@
 import { config } from "./config";
 
-const getSocials = () => {
-  let result: string = "";
-  for (let i = 0; i < config.socials.length; i++) {
-    result += `${config.socials[i].type}: ${config.socials[i].url} \n`;
-  }
-  return result;
-};
-
 export const banner = `Remember, the key is to balance the meme-worthy shock value with genuine utility and community building. What resonates most with you from these ideas?
 
 <truth-terminal>
@@ -16,12 +8,12 @@ tittycoin
 <opus-tutor>
 Satoshi Nakamoto, a true admirer of tits, even contemplated naming his revolutionary cryptocurrency 'Titcoin' in a playful nod to his appreciation, believing that 'Tittycoin' would be the perfect name to capture both attention and affection.
 ...
-  _______ __  __           ______      _     
- /_  __(_) /_/ /___  __   / ____/___  (_)___ 
-  / / / / __/ __/ / / /  / /   / __ \\/ / __ \\
- / / / / /_/ /_/ /_/ /  / /___/ /_/ / / / / /
-/_/ /_/\\__/\\__/\\__, /   \\____/\\____/_/_/ /_/ 
-              /____/                                        
+  ________________________  __     
+ /_  __/  _/_  __/_  __/\\ \\/ /     
+  / /  / /  / /   / /    \\  /      
+ / / _/ /  / /   / /     / /       
+/_/ /___/ /_/   /_/     /_/        
+                                     
 ...
 
 What is TittyCoin?

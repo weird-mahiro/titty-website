@@ -3,8 +3,6 @@ import { history } from "../stores/history";
 import { theme } from "../stores/theme";
 import { config } from "../../config";
 
-import { banner } from "../../helper";
-
 export const commands: Record<
   string,
   (args: string[]) => Promise<string> | string
@@ -61,6 +59,11 @@ export const commands: Record<
   },
   screening: () => {
     return config.screening;
+  },
+  chat: () => {
+    window.open(config.socials[3].url);
+
+    return `Opening ${config.socials[3].type} at ${config.socials[3].url}`;
   },
   clear: () => {
     history.set([]);

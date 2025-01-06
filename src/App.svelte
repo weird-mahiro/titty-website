@@ -4,7 +4,6 @@
   import History from "./components/History.svelte";
   import { theme } from "./stores/theme";
   import { history } from "./stores/history";
-  import { banner } from "../helper";
 
   // reset history
   window.onbeforeunload = function (e) {

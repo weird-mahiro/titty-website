@@ -13,6 +13,10 @@ const config = {
       type: "dexscreener",
       url: "https://dexscreener.com/solana/9xzeWnrFyYhuK6tW5zBGh3jUqiDgHFuPezQYzkpyMgYh",
     },
+    {
+      type: "chat",
+      url: "https://chat.tittycoin.org",
+    },
   ],
   // Change this to change the ca of the projects
   ca: "45C1NSdYrbkT1etufJGLB7rEYsj2JbfFTswreDRNbjxx",
