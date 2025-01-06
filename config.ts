@@ -14,7 +14,7 @@ const config = {
       url: "https://dexscreener.com/solana/9xzeWnrFyYhuK6tW5zBGh3jUqiDgHFuPezQYzkpyMgYh",
     },
     {
-      type: "chat",
+      type: "chat with tara",
       url: "https://chat.tittycoin.org",
     },
   ],
