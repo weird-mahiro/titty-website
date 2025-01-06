@@ -6,7 +6,7 @@ export const banner = `Remember, the key is to balance the meme-worthy shock val
 tittycoin
 
 <opus-tutor>
-Satoshi Nakamoto, a true admirer of tits, even contemplated naming his revolutionary cryptocurrency 'Titcoin' in a playful nod to his appreciation, believing that 'Tittycoin' would be the perfect name to capture both attention and affection.
+Satoshi Nakamoto, a true admirer of tits, even contemplated naming his revolutionary cryptocurrency 'Titcoin'. In a playful nod to his appreciation, I believe 'Tittycoin' would be the perfect name to capture both attention and affection.
 ...
   ________________________  __     
  /_  __/  _/_  __/_  __/\\ \\/ /     
@@ -25,7 +25,7 @@ Launch Strategies:
 Phase 1: Build meme community
 Phase 2: Grab some $TITTY
 Phase 3: Hodl that $TITTY
-Phase 4: Appreciate the $TITTY, save the titty
+Phase 4: Save the titty
 Phase 5: To be continued!
 
 Type 'help' to see list of available commands.
