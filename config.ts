@@ -2,19 +2,19 @@ const config = {
   // Change this for all the socials. Just add fix with the format below
   socials: [
     {
-      type: "twitter",
+      type: "Twitter",
       url: "https://x.com/tittyonsolcto",
     },
     {
-      type: "telegram",
+      type: "Telegram",
       url: "https://t.me/tittyctosol",
     },
     {
-      type: "dexscreener",
+      type: "Dexscreener",
       url: "https://dexscreener.com/solana/9xzeWnrFyYhuK6tW5zBGh3jUqiDgHFuPezQYzkpyMgYh",
     },
     {
-      type: "chat with tara",
+      type: "Chat with TARA",
       url: "https://chat.tittycoin.org",
     },
   ],
