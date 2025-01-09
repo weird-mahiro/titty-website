@@ -3,7 +3,7 @@ const config = {
   socials: [
     {
       type: "Twitter",
-      url: "https://x.com/tittyonsolcto",
+      url: "https://x.com/tittycoinsol",
     },
     {
       type: "Telegram",
